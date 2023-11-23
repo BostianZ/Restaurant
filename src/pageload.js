@@ -44,8 +44,6 @@ function pageLoad() {
     banner.style.backgroundSize = "cover";
     banner.style.backgroundPosition = "center center";
     banner.style.height = "300px";   
-    banner.style.width = "100%";
-
 
     navEl.appendChild(ul);
     header.appendChild(navEl);
