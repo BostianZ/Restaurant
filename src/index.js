@@ -1,6 +1,7 @@
 import { pageLoad } from "./pageload";
 import { home } from "./home";
 import { contact } from "./contact"
+import { renderMenuItems } from "./menu";
 
 pageLoad();
 home();
@@ -13,16 +14,16 @@ function homeHandler() {
     home();  
 }
 
-// function menuhandler() {
-//     renderMenuItems();
-// }
+function menuhandler() {
+    renderMenuItems();
+}
 
 function contactsHandler() {
     contact();
 }
 
 homeEl.addEventListener("click", homeHandler);
-// menuEl.addEventListener("click", menuhandler);
+menuEl.addEventListener("click", menuhandler);
 contactEl.addEventListener("click", contactsHandler);
 
 
