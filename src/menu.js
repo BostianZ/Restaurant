@@ -25,23 +25,14 @@ class MenuItem {
     }
 
   }
-
-function menuHeading() {
-    const content = document.querySelector("#content")
-    const divEl = document.createElement("h1");
-    divEl.textContent = "Menu";
-
-    content.appendChild(divEl);
-}
   
 function renderMenuItems() {
     const contentEl = document.querySelector("#content");
     contentEl.innerHTML = "";
-    menuHeading();
 
-    new MenuItem("Hello", "World", "../dist/image01.jpg").renderItem();
-    new MenuItem("Hello", "World", "../dist/image01.jpg").renderItem();
-    new MenuItem("Hello", "World", "../dist/image01.jpg").renderItem();
+    new MenuItem("Easy Homemade Lasagna", "This easy homemade lasagna is pure comfort food and absolutely delicious! The perfect recipe that works well for both a holiday gathering or a cozy weeknight dinner. ", "../dist/lasanga.jpg").renderItem();
+    new MenuItem("Lemon Fettuccine Alfredo", "Classic fettuccine alfredo gets a bright and herbaceous makeover, thanks to Meyer lemons and rosemary, in this super simple, wonderfully creamy pasta dish.", "../dist/fettucini.jpg").renderItem();
+    new MenuItem("Cajun Chicken Carbonara", "A quick and easy cajun take on carbonara pasta with cajun seasoned chicken and a lightly seasoned carbonara sauce!", "../dist/carbonara.jpg").renderItem();
     
 }
 

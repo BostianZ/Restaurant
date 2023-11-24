@@ -7,7 +7,7 @@ class HomeContent {
     renderItem() {
         const content = document.querySelector("#content");
         const divEl = document.createElement("div");
-        const headingEl = document.createElement("h2");
+        const headingEl = document.createElement("h1");
         const paraEl = document.createElement("p");
 
         headingEl.textContent = this.heading;
@@ -30,8 +30,6 @@ function home() {
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`).renderItem();
 
     new HomeContent("Hours", "We are open M-F from 11am to 11pm. Closed on Saturdays and Sundays.").renderItem();
-
-    new HomeContent("Location", "12345 Invisible street, Fake place, Real state").renderItem();
 }
 
 export { home }
